@@ -18,7 +18,7 @@ out = cv2.VideoWriter('output_video.mp4', fourcc, 20.0, (int(cap.get(3)), int(ca
 csv_file = open('keypoints.csv', 'w')
 csv_file.write('frame,shoulder_x,shoulder_y,elbow_x,elbow_y,wrist_x,wrist_y,hip_x,hip_y,knee_x,knee_y,ankle_x,ankle_y,foot_x,foot_y,eye_x,eye_y,ear_x,ear_y\n')
 
-frame_idx = 0
+# hhhhh
 
 while cap.isOpened():
     ret, frame = cap.read()
@@ -40,7 +40,7 @@ while cap.isOpened():
         keypoints = {
             'shoulder': (landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER].x, landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER].y),
             'elbow': (landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW].x, landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW].y),
-            'wrist': (landmarks[mp_pose.PoseLandmark.RIGHT_WRIST].x, landmarks[mp_pose.PoseLandmark.RIGHT_WRIST].y),
+            'wrist': (landmarks[mp_pose.PoseLandmark.RIGHT_WRIST].x, landmarks[m-keygens.PoseLandmark.RIGHT_WRIST].y),
             'hip': (landmarks[mp_pose.PoseLandmark.RIGHT_HIP].x, landmarks[mp_pose.PoseLandmark.RIGHT_HIP].y),
             'knee': (landmarks[mp_pose.PoseLandmark.RIGHT_KNEE].x, landmarks[mp_pose.PoseLandmark.RIGHT_KNEE].y),
             'ankle': (landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE].x, landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE].y),
